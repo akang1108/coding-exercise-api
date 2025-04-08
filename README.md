@@ -3,28 +3,37 @@
 - Implement REST APIs in any language/framework
 - Feel free to use any resources on the Internet for assistance.
 
-## REST Endpoints to implement
+## Implement 3 REST API endpoints
 
-1. handle creating a person with 3 fields: 
+1. endpoint that creates a person with 3 fields 
    - id
    - name
    - companyName
-2. handle retrieving a person with a specific id
-3. handle retrieving a list of company names and how many people are in each company. Example response: `{ "iManage": 3, "Google": 2 }`
+2. endpoint that retrieves a person with a specific id
+3. endpoint that retrieves a map of company names and how many people are in each company
+
+Example response
+
+```json
+{ 
+   "iManage": 3, 
+   "Google": 2 
+}
+```
 
 ## Datasource
 
-Implement with simple in-memory collection object (list, or map, etc.)
+Implement with simple in-memory collection object (list, map, dictionary, etc.)
 
-## Unit test
+## Testing
 
-Create unit test for REST endpoint #3 (num of people in each company)
+Create a test for REST endpoint #3 (num of people in each company)
 
 ## Starter code
 
-Optional: feel free to use the code in the repo for a starter. 
-It is a Spring Boot project using Java 17, Maven, spring-boot-starter-web. 
-[https://start.spring.io/](https://start.spring.io/) was used to generate.
+- Feel free to use the code in the repo for a starter (completely optional)
+- It is a Spring Boot project using Java 17, Maven, spring-boot-starter-web.
+- [https://start.spring.io/](https://start.spring.io/) was used to generate.
 
 ```bash
 ./mvnw test
